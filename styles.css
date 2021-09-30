@@ -1,0 +1,164 @@
+body {
+  margin: 0px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+p {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+/* PARA CENTRAR: MARGIN AUTO */
+#btnCapturar {
+  display: block;
+  margin: auto;
+}
+
+#outerContainer {
+  margin: auto;
+}
+
+#container {
+  width: 50%;
+  margin: auto;
+  background-image: url(./laskerImages/fondo.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  display: flex;
+  align-items: center;
+  touch-action: none;
+  margin-top: 5%;
+}
+
+.item {
+  touch-action: none;
+  user-select: none;
+  position: relative;
+}
+
+.one {
+  width: 20%;
+  top: 0px;
+  left: 0px;
+}
+
+.two {
+  width: 20%;
+  top: 30%;
+  left: 10%;
+  z-index: 10;
+}
+
+.three {
+  width: 25%;
+  z-index: 11;
+}
+
+/* 4, 5, 6, son las barras de color  */
+.four {
+  width: 100%;
+  top: -140px;
+  z-index: 1;
+}
+.five {
+  width: 100%;
+  top: -140px;
+  z-index: 1;
+}
+.six {
+  width: 100%;
+  top: -190px;
+  z-index: 1;
+}
+
+/* terminan barras de color */
+
+.seven {
+  width: 10%;
+  z-index: 3;
+}
+
+.eight {
+  width: 20%;
+  z-index: 11;
+}
+
+.nine {
+  width: 20%;
+}
+
+.ten {
+  width: 20%;
+  z-index: 10;
+}
+.eleven {
+  width: 20%;
+  z-index: 2;
+}
+
+.item:active {
+  opacity: 0.75;
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+canvas {
+border: pink solid 1px;
+padding: 5px 5px;
+}
+
+
+#contenedorCanvas {
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+  margin-top: 5%;
+}
+#btnCapturar {
+  border-radius: 10px;
+  background-color: cornflowerblue;
+  color: white;
+  font-family: nunito;
+  border: none;
+  padding: 10px;
+  margin-top: 35px;
+}
+#btnCapturar:hover {
+  background-color: lightcoral;
+}
+
+@media (max-width: 280px) {
+  .four {
+    top: -10px;
+  }
+  .five {
+    top: -10px;
+  }
+  .six {
+    top: -10px;
+  }
+}
+
+@media (min-width: 281px) and (max-width: 424px) {
+  .four {
+    top: -10px;
+  }
+  .five {
+    top: -10px;
+  }
+  .six {
+    top: -10px;
+  }
+}

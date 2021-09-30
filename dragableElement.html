@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Drag Multiple Elements</title>
+  </head>
+
+  <body>
+    <h1>Lasker Variations</h1>
+    <p>Arrastra los elementos a lo largo del fondo.
+    <br>En cuanto esté listo, oprime el botón para generar tu variación
+    <br>Haz click derecho sobre tu versión y guarda la imagen en tu equipo</p>
+
+    <button id="btnCapturar">Genera tu versión</button>
+
+    <div id="outerContainer">
+      <div id="container">
+        <img
+          class="item one"
+          src="./laskerImages/Capa-1.png"
+          alt="elemento-1"
+        />
+        <img
+          class="item two"
+          src="./laskerImages/Capa-2.png"
+          alt="elemento-2"
+        />
+        <img
+          class="item three"
+          src="./laskerImages/Capa-3.png"
+          alt="elemento-3"
+        />
+        <img
+          class="item nine"
+          src="./laskerImages/Capa-9.png"
+          alt="elemento-9"
+        />
+        <img
+        class="item ten"
+        src="./laskerImages/Capa-10.png"
+        alt="elemento-10"
+      />
+      <img
+      class="item eleven"
+      src="./laskerImages/Capa-11.png"
+      alt="elemento-11"
+    />
+        
+        <img
+          class="item seven"
+          src="./laskerImages/Capa-7.png"
+          alt="elemento-7"
+        />
+        <img
+          class="item eight"
+          src="./laskerImages/Capa-8.png"
+          alt="elemento-8"
+        />
+        <img
+          class="item four"
+          src="./laskerImages/Capa-4.png"
+          alt="elemento-4"
+        />
+        <img
+          class="item five"
+          src="./laskerImages/Capa-5.png"
+          alt="elemento-5"
+        />
+        <img
+          class="item six"
+          src="./laskerImages/Capa-6.png"
+          alt="elemento-6"
+        />
+       
+       
+      </div>
+    
+    </div>
+    
+    <div id="contenedorCanvas">
+      
+    </div>
+
+
+<!-- conexión con scripts de html2canavas -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js"></script>
+
+        <!-- conexión con scripts-movimiento -->
+        <script src="scripts.js"></script>
+  </body>
+</html>
