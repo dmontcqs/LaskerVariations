@@ -1,16 +1,70 @@
 body {
   margin: 0px;
+  background-color: #fff5e5; 
+}
+/* COMIENZA SECCIÓN TÍTULO  */
+
+
+.title-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
-h1 {
-  text-align: center;
-  font-family: "Nunito", sans-serif;
+#title {
+  display: block;
+  margin: auto;
+  padding: 8%;
+  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2em;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-animation: reveal 2000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+          animation: reveal 2000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+  margin: 0%;
+}
+@-webkit-keyframes reveal {
+  80% {
+    letter-spacing: 10px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@-webkit-keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #1832db;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #1832db;
+  }
 }
 
-p {
-  text-align: center;
-  font-family: "Nunito", sans-serif;
+#instructions{
+  font-family: "Nunito";
+  padding: 5%;
+  letter-spacing: 15%;
 }
+
+
+/* Termina sección titulo */
+
+
 
 /* PARA CENTRAR: MARGIN AUTO */
 #btnCapturar {
@@ -111,7 +165,6 @@ p {
 }
 
 canvas {
-border: pink solid 1px;
 padding: 5px 5px;
 }
 
